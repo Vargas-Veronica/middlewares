@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs', title)  %>
+</head>
+<body>
+    <h1>Login</h1>
+	<%- include('partials/header') %>
+    <main class="col justify-content-center ">
+        <section class="row">
+            <article class="col-12 col-md-8 mx-auto">
+                <div class="card"  >
+                    <div class="card-body">
+                        <form action="/admin" method="get">
+                            <div class="col aling-self-center mb-3">
+                                <label for="admin" class="form-label">Login</label>
+                                <input type="text" class="form-control" id="admin" name="admin" placeholder="Ingrese su nombre">
+                            </div>
+                            <div class=" col aling-self-center mb-3">
+                                <button class="btn btn-primary">
+                                    Ingresar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
